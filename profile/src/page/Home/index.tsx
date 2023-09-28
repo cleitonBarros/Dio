@@ -1,4 +1,5 @@
 import { ComponentProps } from "react";
+import { Link } from "react-router-dom";
 
 import { tv, VariantProps } from "tailwind-variants";
 
@@ -31,19 +32,19 @@ export function Home() {
         <nav className="flex justify-center items-end w-auto">
           <ul className={list()}>
             <li className="transition-all  skew-x-[0.001deg] duration-1000 ease-in-out hover:skew-x-[-20deg]">
-              <a className={link()} href="">
+              <Link className={link()} to="/works">
                 Works
-              </a>
+              </Link>
             </li>
             <li className="transition-all skew-x-[0.001deg] duration-1000 ease-in-out hover:skew-x-[-20deg]">
-              <a className={link()} href="">
+              <Link className={link()} to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="transition skew-x-[0.001deg] duration-1000 ease-in-out hover:skew-x-[-20deg]">
-              <a className={link()} href="">
+              <Link className={link()} to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -1,0 +1,150 @@
+.about {
+	position: fixed;
+	z-index: 10;
+	bottom: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	transition: all 0.2s ease;
+}
+
+.about .bg_links {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 100%;
+	backdrop-filter: blur(5px);
+	position: absolute;
+}
+
+.about .logo {
+	width: 40px;
+	height: 40px;
+	z-index: 9;
+	background-image: url("../../assets//svg/aperture.svg");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.9;
+	transition: all 1s 0.2s ease;
+	bottom: 0;
+	right: 0;
+}
+
+
+.about .page {
+	opacity: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.about .page .icon {
+	width: 100%;
+	height: 100%;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	display: flex;
+	transition: all 0.2s ease, background-color 0.4s ease;
+	opacity: 0;
+	border-radius: 100%;
+}
+
+.about .page.Home {
+	transition: all 0.8s ease;
+}
+
+.about .page.Home .icon {
+	background-image: url("../../assets/svg/home.svg");
+}
+
+.about .page.About {
+	transition: all 0.3s ease;
+}
+
+.about .page.About .icon {
+	background-image: url("../../assets/svg/user.svg");
+}
+
+.about .page.Contact {
+	transition: all 0.8s ease;
+}
+
+.about .page.Contact .icon {
+	background-image: url("../../assets/svg/phone.svg");
+}
+
+.about .page.Work {
+	transition: all 0.8s ease;
+}
+
+.about .page.Work .icon {
+	background-image: url("../../assets/svg/image.svg");
+}
+
+.about:hover {
+	width: 105px;
+	height: 105px;
+	transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .logo {
+	opacity: 1;
+	transition: all 0.6s ease;
+}
+
+.about:hover .page {
+	opacity: 1;
+}
+
+.about:hover .page .icon {
+	opacity: 0.9;
+}
+
+.about:hover .page:hover {
+	background-size: 28px;
+}
+
+.about:hover .page:hover .icon {
+	background-size: 65%;
+	opacity: 1;
+}
+
+.about:hover .page.position-1 {
+	right: 0;
+	bottom: calc(100% - 40px);
+	transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .page.position-1 .icon:hover {
+	background-color: #698fb7;
+}
+
+.about:hover .page.position-2 {
+	bottom: 45%;
+	right: 45%;
+	transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .page.position-2 .icon:hover {
+	background-color: #ea4c89;
+}
+
+.about:hover .page.position-3 {
+	bottom: 0;
+	right: calc(100% - 40px);
+	transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .page.position-3 .icon:hover {
+	background-color: #0077b5;
+}
+
