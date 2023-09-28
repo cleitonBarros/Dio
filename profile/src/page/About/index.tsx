@@ -1,6 +1,5 @@
 import { ComponentProps } from "react";
 
-import img6 from "../../assets/doctor/_MG_5955.jpg";
 import img from "../../assets/doctor/_MG_6601.jpg";
 import img5 from "../../assets/doctor/_MG_6614.jpg";
 import img3 from "../../assets/doctor/_MG_6623.jpg";
@@ -88,11 +87,6 @@ export function About() {
           <img
             className="w-96 md:w-full md:h-full md:col-span-2 "
             src={img2}
-            alt="imagem de perfil"
-          />
-          <img
-            className="w-96 md:w-full md:h-64 md:col-span-3 object-cover object-center"
-            src={img6}
             alt="imagem de perfil"
           />
         </figure>
