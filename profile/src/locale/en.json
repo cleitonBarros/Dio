@@ -1,0 +1,18 @@
+{
+    "translation": {
+        "home": {
+            "text": "Diulio: photographer and gastronome. Experienced in food photography, product photography, and nature photography. Passionate about cooking and trying new flavors.",
+            "works": "Works",
+            "about": "About",
+            "contact": "Contact"
+        },
+        "about": {
+            "p1": "My name is Diulio, and I am a photographer and gastronome. I specialize in advertising photography, but I am open to other opportunities. I am attentive to details and believe that small details can make a big difference. A good photograph can set you apart from your competitors. I have experience in food photography, product photography (advertising), and nature photography.",
+            "p2": "I'm also passionate about cooking and exploring new flavors. I'm always looking for new ways to combine my photography with my passion to create unique and engaging images. If you're looking for someone who can capture the beauty of your product, please contact me today! I look forward to learning more about your project and helping you create images that will delight your customers."
+        },
+        "contact": {
+            "p1": "Are you in need of a photographer with experience in advertising photography or just for a photo shoot?",
+            "p2": "Please contact me through the links below!"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "translation": {
+        "home": {
+            "text": "Diulio: fotógrafo e gastrônomo. Experiênte em fotografia de alimentos, fotografia de produtos e fotografia de natureza. Apaixonado por cozinhar e experimentar novos sabores.",
+            "works": "Obras",
+            "about": "Sobre",
+            "contact": "Contato"
+        },
+        "about": {
+            "p1": "Me chamo Diulio, sou fotógrafo e gastrônomo. Estou focado em fotografia publicitária, mas estou aberto a outras oportunidades. Sou atencioso aos detalhes e acredito que os pequenos detalhes podem fazer muita diferença. Uma boa foto pode diferenciar você de seus concorrentes. Tenho experiência em fotografia de alimentos, fotografia de produtos (publicitária) e fotografia de natureza.",
+            "p2": "Também sou apaixonado por cozinhar e experimentar novos sabores. Estou sempre procurando novas maneiras de combinar minha fotografia e minha paixão para criar imagens únicas e envolventes. Se você está procurando alguém que possa capturar a beleza de seu produto, entre em contato comigo hoje mesmo! Estou ansioso para saber mais sobre o seu projeto e ajudá-lo a criar imagens que irão encantar seus clientes."
+        },
+        "contact": {
+            "p1": "Está precisando de um fotografo com experiência em fotografia publicitaria ou apenas para um ensaio fotográfico ?",
+            "p2": "Entre em contato nos links abaixo !"
+        }
+    }
+}
