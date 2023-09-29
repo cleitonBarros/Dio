@@ -9,38 +9,56 @@ export function Menu() {
   const { pathname } = location;
 
   return (
-    <div className="about">
+    <div className="about ">
       {path(pathname) === "/" ? (
-        <a className="bg_links page position-1 Work" href="/works">
+        <a
+          className="bg_links page position-1 Work  bg-[#00000033] dark:bg-slate-50 "
+          href="/works"
+        >
           <span className="icon"></span>
         </a>
       ) : (
-        <a className="bg_links page position-1 Home" href="/">
+        <a
+          className="bg_links page position-1 Home bg-[#00000033] dark:bg-slate-50"
+          href="/"
+        >
           <span className="icon"></span>
         </a>
       )}
 
       {path(pathname) === "about" ? (
-        <a className="bg_links page position-2 Work" href="/works">
+        <a
+          className="bg_links page position-2 Work  bg-[#00000033] dark:bg-slate-50"
+          href="/works"
+        >
           <span className="icon"></span>
         </a>
       ) : (
-        <a className="bg_links page position-2 About" href="/about">
+        <a
+          className="bg_links page position-2 About  bg-[#00000033] dark:bg-slate-50"
+          href="/about"
+        >
           <span className="icon"></span>
         </a>
       )}
 
       {path(pathname) === "contact" ? (
-        <a className="bg_links page position-3 Work" href="/works">
+        <a
+          className="bg_links page position-3 bg-[#00000033] dark:bg-slate-50 Work"
+          href="/works"
+        >
           <span className="icon"></span>
         </a>
       ) : (
-        <a className="bg_links page position-3 Contact" href="/contact">
+        <a
+          className="bg_links page position-3 bg-[#00000033] dark:bg-slate-50 Contact"
+          href="/contact"
+        >
           <span className="icon"></span>
         </a>
       )}
 
-      <a className="bg_links logo"></a>
+      <a className="bg_links logo bg-[#00000033] dark:bg-slate-50"></a>
     </div>
   );
 }

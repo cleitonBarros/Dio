@@ -1,6 +1,7 @@
 import { ComponentProps } from "react";
 
 import qrcode from "../../assets/QR-code.png";
+import { useLangue } from "../../context/useLanguage";
 
 import { Aperture, Instagram, Phone } from "lucide-react";
 import { tv, VariantProps } from "tailwind-variants";
@@ -11,13 +12,16 @@ export type SectionProps = ComponentProps<"section"> &
 const section = tv({
   slots: {
     base: "flex justify-center items-center h-screen w-full max-w-7xl my-0 mx-auto",
-    article: "w-4/5 flex justify-between",
+    article: "w-4/5 flex justify-between dark:text-slate-50",
     aside: "flex flex-col justify-start items-start gap-8 min-[450px]:max-w-sm",
     figure: " hidden md:flex items-center justify-center"
   }
 });
 export function Contact() {
+  const { t } = useLangue();
+
   const { base, article, aside, figure } = section();
+
   return (
     <section className={base()}>
       <article className={article()}>
@@ -27,11 +31,8 @@ export function Contact() {
             <Aperture size={40} />
           </div>
           <p className="flex flex-col text-base lg:text-lg font-Poppins gap-1">
-            <p>
-              Está precisando de um fotografo com experiência em fotografia
-              publicitaria ou apenas para um ensaio fotográfico ?
-            </p>
-            <p>Entre em contato nos links abaixo !</p>
+            <p>{t("contact.p1")}</p>
+            <p>{t("contact.p2")}</p>
           </p>
           <ul className="flex items-start justify-center gap-6 mt-6">
             <li>

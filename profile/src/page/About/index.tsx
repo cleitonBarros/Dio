@@ -6,6 +6,7 @@ import img3 from "../../assets/doctor/_MG_6623.jpg";
 import img4 from "../../assets/doctor/_MG_6624.jpg";
 import img2 from "../../assets/doctor/_MG_6625.jpg";
 import portfolio from "../../assets/Portifólio Fotográfico - PT.pdf";
+import { useLangue } from "../../context/useLanguage";
 
 import { FolderDown } from "lucide-react";
 import { tv, VariantProps } from "tailwind-variants";
@@ -23,6 +24,8 @@ const section = tv({
   }
 });
 export function About() {
+  const { t } = useLangue();
+
   const { base, article, aside, figure } = section();
   return (
     <section className={base()}>
@@ -36,24 +39,9 @@ export function About() {
           <img className="w-96 md:w-80" src={img} alt="imagem de perfil" />
         </figure>
         <aside className={aside()}>
-          <p className="font-Poppins  text-black lg:text-lg flex flex-col gap-2">
-            <p>
-              Me chamo Diulio, sou fotógrafo e gastrônomo. Estou focado em
-              fotografia publicitária, mas estou aberto a outras oportunidades.
-              Sou atencioso aos detalhes e acredito que os pequenos detalhes
-              podem fazer muita diferença. Uma boa foto pode diferenciar você de
-              seus concorrentes. Tenho experiência em fotografia de alimentos,
-              fotografia de produtos (publicitária) e fotografia de natureza.
-            </p>
-            <p>
-              Também sou apaixonado por cozinhar e experimentar novos sabores.
-              Estou sempre procurando novas maneiras de combinar minha
-              fotografia e minha paixão para criar imagens únicas e envolventes.
-              Se você está procurando alguém que possa capturar a beleza de seu
-              produto, entre em contato comigo hoje mesmo! Estou ansioso para
-              saber mais sobre o seu projeto e ajudá-lo a criar imagens que irão
-              encantar seus clientes.
-            </p>
+          <p className="font-Poppins  text-black dark:text-slate-50 lg:text-lg flex flex-col gap-2">
+            <p>{t("about.p1")}</p>
+            <p>{t("about.p2")}</p>
           </p>
           <a
             className="absolute end-full right-0"
@@ -62,13 +50,13 @@ export function About() {
             href={portfolio}
             download="Diulio-Portfólio-fotografico"
           >
-            <FolderDown size={32} />
+            <FolderDown size={32} className="dark:text-slate-50" />
           </a>
         </aside>
       </article>
 
       <footer className="flex items-center justify-center w-full max-w-5xl gap-16 md:gap-0 p-6">
-        <figure className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2">
+        <figure className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-4">
           <img
             className="w-96 md:w-full md:h-full md:col-span-2 "
             src={img4}

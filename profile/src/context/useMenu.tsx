@@ -5,11 +5,10 @@ interface ProviderProps {
 }
 type contextProps = {
   path(location: string): string;
-  local: string;
 };
 
 export const MenuContext = createContext({} as contextProps);
-let local = "";
+
 function MenuProvider({ children }: ProviderProps) {
   const path = (location: string) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -18,15 +17,13 @@ function MenuProvider({ children }: ProviderProps) {
       "/about": "about",
       "/works": "works"
     };
-    local = location;
+
     const defaultPath = "/";
     return pathMappings[location] || defaultPath;
   };
 
   return (
-    <MenuContext.Provider value={{ path, local }}>
-      {children}
-    </MenuContext.Provider>
+    <MenuContext.Provider value={{ path }}>{children}</MenuContext.Provider>
   );
 }
 function UseMenu() {

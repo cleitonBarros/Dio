@@ -12,8 +12,8 @@ export function Footer({ ...props }: FooterProps) {
   return (
     <footer className={footer()} {...props}>
       <article className="flex justify-center items-center  gap-4 w-full max-w-7xl ">
-        <p className=" text-black text-base">@2023</p>
-        <div className="h-px w-[60rem] bg-slate-500"></div>
+        <p className=" text-black text-base dark:text-slate-50">@2023</p>
+        <div className="h-px w-[60rem] bg-slate-500 dark:bg-slate-50"></div>
       </article>
     </footer>
   );
