@@ -27,8 +27,13 @@ export function Contact() {
       <article className={article()}>
         <aside className={aside()}>
           <div className="flex justify-center gap-4 items-center">
-            <h2 className="font-Fredoka text-9xl font-semibold">Hey</h2>
-            <Aperture size={40} />
+            <h2 className="font-Fredoka text-9xl font-semibold text-slate-950 dark:text-forest-300 ">
+              Hey
+            </h2>
+            <Aperture
+              size={40}
+              className="text-slate-950 dark:text-forest-200"
+            />
           </div>
           <p className="flex flex-col text-base lg:text-lg font-Poppins gap-1">
             <p>{t("contact.p1")}</p>
@@ -37,12 +42,18 @@ export function Contact() {
           <ul className="flex items-start justify-center gap-6 mt-6">
             <li>
               <a href="#">
-                <Phone size={32} />
+                <Phone
+                  size={32}
+                  className="text-slate-950 dark:text-forest-200"
+                />
               </a>
             </li>
             <li>
               <a href="#">
-                <Instagram size={32} />
+                <Instagram
+                  size={32}
+                  className="text-slate-950 dark:text-forest-200"
+                />
               </a>
             </li>
           </ul>

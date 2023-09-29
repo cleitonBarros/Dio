@@ -12,6 +12,7 @@
 }
 
 .about .bg_links {
+	background-color: #9ff597;
 	width: 40px;
 	height: 40px;
 	border-radius: 100%;
@@ -124,7 +125,7 @@
 }
 
 .about:hover .page.position-1 .icon:hover {
-	background-color: #698fb7;
+	background-color: #84bd00;
 }
 
 .about:hover .page.position-2 {
@@ -134,7 +135,7 @@
 }
 
 .about:hover .page.position-2 .icon:hover {
-	background-color: #ea4c89;
+	background-color: #84bd00;
 }
 
 .about:hover .page.position-3 {
@@ -144,6 +145,5 @@
 }
 
 .about:hover .page.position-3 .icon:hover {
-	background-color: #0077b5;
+	background-color: #84bd00;
 }
-

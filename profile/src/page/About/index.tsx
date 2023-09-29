@@ -30,8 +30,8 @@ export function About() {
   return (
     <section className={base()}>
       <header>
-        <h2 className="font-Fredoka font-semibold text-5xl md:text-6xl lg:text-7xl ">
-          Sobre
+        <h2 className="font-Fredoka font-semibold text-5xl md:text-6xl lg:text-7xl text-slate-950 dark:text-forest-50 ">
+          {t("home.about")}
         </h2>
       </header>
       <article className={article()}>
@@ -50,7 +50,10 @@ export function About() {
             href={portfolio}
             download="Diulio-Portfólio-fotografico"
           >
-            <FolderDown size={32} className="dark:text-slate-50" />
+            <FolderDown
+              size={32}
+              className="text-slate-950 dark:text-forest-200"
+            />
           </a>
         </aside>
       </article>

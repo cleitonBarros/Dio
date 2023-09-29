@@ -12,30 +12,30 @@ export function Menu() {
     <div className="about ">
       {path(pathname) === "/" ? (
         <a
-          className="bg_links page position-1 Work  bg-[#00000033] dark:bg-slate-50 "
+          title="Trabalhos"
+          className="bg_links page position-1 Work   "
           href="/works"
         >
           <span className="icon"></span>
         </a>
       ) : (
-        <a
-          className="bg_links page position-1 Home bg-[#00000033] dark:bg-slate-50"
-          href="/"
-        >
+        <a title="Home" className="bg_links page position-1 Home " href="/">
           <span className="icon"></span>
         </a>
       )}
 
       {path(pathname) === "about" ? (
         <a
-          className="bg_links page position-2 Work  bg-[#00000033] dark:bg-slate-50"
+          title="Trabalhos"
+          className="bg_links page position-2 Work  "
           href="/works"
         >
           <span className="icon"></span>
         </a>
       ) : (
         <a
-          className="bg_links page position-2 About  bg-[#00000033] dark:bg-slate-50"
+          title="Sobre"
+          className="bg_links page position-2 About  "
           href="/about"
         >
           <span className="icon"></span>
@@ -44,21 +44,23 @@ export function Menu() {
 
       {path(pathname) === "contact" ? (
         <a
-          className="bg_links page position-3 bg-[#00000033] dark:bg-slate-50 Work"
+          title="Trabalhos"
+          className="bg_links page position-3  Work"
           href="/works"
         >
           <span className="icon"></span>
         </a>
       ) : (
         <a
-          className="bg_links page position-3 bg-[#00000033] dark:bg-slate-50 Contact"
+          title="Contato"
+          className="bg_links page position-3  Contact"
           href="/contact"
         >
           <span className="icon"></span>
         </a>
       )}
 
-      <a className="bg_links logo bg-[#00000033] dark:bg-slate-50"></a>
+      <a className="bg_links logo" title="menu"></a>
     </div>
   );
 }

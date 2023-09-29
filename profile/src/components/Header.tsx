@@ -21,18 +21,22 @@ export function Header({ ...props }: HeaderProps) {
   return (
     <header className={header()} {...props}>
       <div className="flex justify-center items-center gap-4 w-full max-w-7xl ">
-        <div className="h-px w-[57rem] bg-slate-500 dark:bg-slate-50"></div>
+        <div className="h-px w-[57rem] bg-slate-950 dark:bg-forest-200"></div>
         <p
-          className="cursor-pointer dark:text-slate-50"
+          className="cursor-pointer  text-slate-950 text-lg font-medium block dark:text-forest-200 "
           onClick={handleLanguageChange}
         >
           {Langue === "pt" ? "PT" : "EN"}
         </p>
         <button onClick={ChangeTheme} type="button">
-          {theme === "dark" ? <Moon className="dark:text-slate-50" /> : <Sun />}
+          {theme === "dark" ? (
+            <Moon className="dark:text-forest-200" />
+          ) : (
+            <Sun className="  text-slate-950" />
+          )}
         </button>
         <a href="#">
-          <Instagram className="dark:text-slate-50" />
+          <Instagram className=" text-slate-950 dark:text-forest-200 " />
         </a>
       </div>
     </header>
