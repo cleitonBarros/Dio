@@ -2,6 +2,8 @@ import { ComponentProps } from "react";
 
 import qrcode from "../../assets/QR-code.png";
 import { useLangue } from "../../context/useLanguage";
+import { ScrollToTop } from "../../hook/useScrollToTop";
+import { AnimationScroll } from "../../lib/scrollReveal";
 
 import { Aperture, Instagram, Phone } from "lucide-react";
 import { tv, VariantProps } from "tailwind-variants";
@@ -18,6 +20,10 @@ const section = tv({
   }
 });
 export function Contact() {
+  ScrollToTop();
+
+  AnimationScroll();
+
   const { t } = useLangue();
 
   const { base, article, aside, figure } = section();
@@ -26,8 +32,8 @@ export function Contact() {
     <section className={base()}>
       <article className={article()}>
         <aside className={aside()}>
-          <div className="flex justify-center gap-4 items-center">
-            <h2 className="font-Fredoka text-9xl font-semibold text-slate-950 dark:text-forest-300 ">
+          <div className=" bottom flex justify-center gap-4 items-center">
+            <h2 className=" font-Garamond text-9xl font-semibold text-slate-950 dark:text-forest-300 ">
               Hey
             </h2>
             <Aperture
@@ -35,12 +41,12 @@ export function Contact() {
               className="text-slate-950 dark:text-forest-200"
             />
           </div>
-          <p className="flex flex-col text-base lg:text-lg font-Poppins gap-1">
+          <p className="flex aside flex-col text-base lg:text-lg font-Poppins gap-1">
             <p>{t("contact.p1")}</p>
             <p>{t("contact.p2")}</p>
           </p>
           <ul className="flex items-start justify-center gap-6 mt-6">
-            <li>
+            <li className="right">
               <a href="#">
                 <Phone
                   size={32}
@@ -48,7 +54,7 @@ export function Contact() {
                 />
               </a>
             </li>
-            <li>
+            <li className="right">
               <a href="#">
                 <Instagram
                   size={32}
@@ -59,7 +65,7 @@ export function Contact() {
           </ul>
         </aside>
         <figure className={figure()}>
-          <img src={qrcode} alt="qrcode para o whatapp" />
+          <img className="open" src={qrcode} alt="qrcode para o whatapp" />
         </figure>
       </article>
     </section>
