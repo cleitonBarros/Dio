@@ -13,7 +13,7 @@ export type SectionProps = ComponentProps<"section"> &
 
 const section = tv({
   slots: {
-    base: "flex justify-center items-center h-screen w-full max-w-7xl my-0 mx-auto",
+    base: "flex justify-center items-center md:h-screen w-full max-w-7xl my-0 mx-auto",
     article: "w-4/5 flex justify-between dark:text-slate-50",
     aside: "flex flex-col justify-start items-start gap-8 min-[450px]:max-w-sm",
     figure: " hidden md:flex items-center justify-center"
